@@ -1,0 +1,20 @@
+----> CSS Grid
+. Grid is a container with rows and cols
+. Each row and column has boxes called cells
+. Grid track is the space between 2 adjacent lines
+. Grid item is the direct child of the grid container
+
+. grid-template-columns and grid-template-rows prop is used to specify the number of cols and rows.
+
+. we should use repeat and fr as values to declare the number of rows and cols.
+    eg: grid-template-rows: repeat(3, 1fr) - it means, divide it into 3 parts in the 1 fraction of entire width available
+
+. if cols > rows in the repeat function then cols has priority.
+    eg: if grid-template-rows: repeat(1, 1fr) 
+           grid-template-cols: repeat(4, 1fr) and items > cols then in that case, there will be 4 cols in row and rest cols will adjust in new row at the bottom of container.
+
+. justify-self is especially for grid items and can indviduallly justofy the item.
+. for vertical we use align-items
+. we use place-self, place-items prop to combine align and justify
+
+ 
